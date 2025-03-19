@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Rewrite /video/Some-Video-Title to /video.php?title=Some-Video-Title
+RewriteRule ^video/([^/]+)/?$ video.php?title=$1 [L,QSA]
